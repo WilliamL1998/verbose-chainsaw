@@ -1,0 +1,225 @@
+/* making these colors into variables to call to later */
+:root{
+    --darkBlue: rgb(27, 38, 55);
+    --lightBLue: rgb(152, 193, 217);
+    --lightestBlue: rgb(224, 251, 252);
+    --orange: rgb(238, 108, 77);
+    --grey: rgb(41, 50, 65);
+}
+
+/* setting up default background and text color/size/font*/
+*{
+    background-color: var(--darkBlue);
+    color: var(--lightBLue);
+}
+
+/* making all h1 and h2 elements text color into lightestBlue */
+h1, h2{
+    color: var(--lightestBlue);
+    font-size: 4em;
+}
+
+/* creating navigation bar layout */
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    top: -1em;
+    width: 100%;
+    padding: 1em;
+    z-index: 99;
+}
+
+/* specifications of the navigation bar texts */
+nav ul li{
+    margin: 0 1em 0 1em;
+    color: var(--lightestBlue);
+    font-size: 1em;
+}
+
+/* modifying nav bar links appearance*/
+nav ul li a{
+    text-decoration: none;
+    padding: 1em;
+}
+
+/* change nav bar links background color when hovered */
+nav ul li a:hover{
+    background-color: var(--grey);
+}
+
+/* setting up header layout */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* creating About section layout */
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* specifications for p in About section */
+.About p{
+    margin: 2em 6em 2em 6em;
+    font-size: 2em;
+}
+
+/* specifications fro img in About section */
+.About img{
+    margin: 1em;
+}
+
+/* creating Works section layout */
+.Works{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* keeps h2 in Works section stay on top of flexbox */
+.Works h2{
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+/* just removing the blue and underline of links */
+.Works a{
+    text-decoration: none;
+}
+
+/* creating work example 1's layout and link an image */
+#works1{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 40vh;
+    min-width: 80vw;
+    background-image: url(../images/horiseon\ screenshot.png);
+    background-position: top;
+    background-size: cover;
+}
+
+/* same thing but for works 2 through 7 */
+#works2{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#works3{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#works4{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#works5{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#works6{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#works7{
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 20vh;
+    min-width: 40vw;
+    background-image: url(../images/work7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* make it so the work example links zoom when hovered with mouse */
+.Works a:hover{
+    transform: scale(110%);
+}
+
+/* just changing the text color */
+.Works a div{
+    color: var(--lightestBlue);
+}
+
+/* creating Contact section layout */
+.Contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.Contact ul li{
+    list-style: none;
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    *{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    *{
+        font-size: 20px;
+    }
+}
