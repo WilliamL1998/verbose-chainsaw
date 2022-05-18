@@ -199,6 +199,7 @@ header{
     margin: 0.5em;
 }
 
+/* Media queries to rescale everything depending on width of viewport */
 @media screen and (max-width: 480px) {
     *{
         font-size: 8px;
