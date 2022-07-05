@@ -108,7 +108,7 @@ header{
     flex-direction: column-reverse;
     min-height: 40vh;
     min-width: 80vw;
-    background-image: url(../images/WhatTheFridge.png);
+    background-image: url(../images/express-movies.PNG);
     background-position: top;
     background-size: cover;
 }
@@ -119,7 +119,7 @@ header{
     flex-direction: column-reverse;
     min-height: 20vh;
     min-width: 40vw;
-    background-image: url(../images/express-movies.PNG);
+    background-image: url(../images/WhatTheFridge.png);
     background-position: center;
     background-size: cover;
 }
